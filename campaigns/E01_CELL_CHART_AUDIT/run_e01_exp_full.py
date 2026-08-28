@@ -39,7 +39,7 @@ from scipy.io import loadmat
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 DATA = os.path.join(ROOT, "data")
-NASA = "/home/claude/nasa_x"
+NASA = os.path.join(DATA, "extracted", "nasa")
 sys.path.insert(0, HERE)
 from e01_core import PAIRS, REJECTION_SIGMA, sha256_of, verdict  # noqa
 

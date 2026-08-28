@@ -22,7 +22,7 @@ import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 DATA = os.path.join(ROOT, "data")
-CS2 = "/home/claude/cs2"
+CS2 = os.path.join(DATA, "extracted")
 sys.path.insert(0, HERE)
 from e01_core import sha256_of  # noqa: E402
 
