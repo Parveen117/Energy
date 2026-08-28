@@ -1,0 +1,89 @@
+{
+  "E01A_COMMON_GRADIENT_CONTROL": {
+    "raw_residual": 0.0,
+    "status": "PASS_CONTROL"
+  },
+  "E01B_CLEAN_INDEPENDENT_SLOTS": {
+    "noise_standard_error": 1.527008638423724e-08,
+    "raw_residual": 0.0,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 0.0
+  },
+  "E01C_SENSOR_GAIN_PLUECKER_INVISIBLE": {
+    "gain_error": 0.02,
+    "note": "A gain error on ONE channel scales three brackets by the same factor; the Pfaffian scales and its zero is preserved. Single-channel gain faults are therefore OUTSIDE the Pluecker detection class -- a property of the theorem, stated openly and regression-tested. Rung E01E shows the cut-square localization catches exactly this fault class.",
+    "raw_residual": 0.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 0.0
+  },
+  "E01D_AGING_END_OF_LIFE_20PC_FADE": {
+    "Ea_shift_K": 800.0,
+    "bootstrap": {
+      "n_draws": 2000,
+      "p999_interval": [
+        1.2112061919496878e-07,
+        2.669869255333727e-07
+      ],
+      "zero_inside_99p9": false
+    },
+    "fade": 0.2,
+    "noise_standard_error": 2.3148669927629682e-08,
+    "r_grow": 0.6,
+    "raw_residual": 1.946573805316561e-07,
+    "rejection_threshold": 5.0,
+    "status": "FALSIFIED_MEASUREMENT_CONTRACT",
+    "z_score": 8.40900929255196
+  },
+  "E01D_AGING_MIDLIFE_10PC_FADE": {
+    "Ea_shift_K": 400.0,
+    "fade": 0.1,
+    "noise_standard_error": 1.8763219692161633e-08,
+    "r_grow": 0.3,
+    "raw_residual": 9.115924935160344e-08,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 4.858401215100912
+  },
+  "E01D_AGING_MILD_0p2PC_FADE": {
+    "Ea_shift_K": 10.0,
+    "fade": 0.002,
+    "noise_standard_error": 1.5331574399246526e-08,
+    "r_grow": 0.005,
+    "raw_residual": 1.9825586130389036e-09,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 0.12931213464524147
+  },
+  "E01E_CUT_SQUARE_LOCALIZATION": {
+    "aged_cell": {
+      "channel1_pair_share": 0.40627597244385877,
+      "transverse_share": 0.004304967255858236
+    },
+    "clean_transverse_share": 0.0,
+    "identity_max_rel_residual": 1.7168558420300665e-16,
+    "note": "Discriminant: a pure voltage-sense gain fault puts ALL transverse energy in the channel-1 pairs (share = 1.0); cell aging spreads it across the resistance and thermal pairs. 'Is it the cell or the sensor?' gets a certified, localized answer.",
+    "status": "PASS_CONTROL",
+    "voltage_sensor_fault": {
+      "channel1_pair_share": 1.0,
+      "transverse_share": 4.712480177006637e-06
+    }
+  },
+  "_meta": {
+    "audit_discipline": "Thermodynamics-Reproducibility T01; Bio-tech B01/B02",
+    "chart": "(s, T): state of charge x temperature",
+    "chart_point": {
+      "T_K": 298.15,
+      "s": 0.5
+    },
+    "framework_sources": [
+      "arXiv:2603.20773 rank-2 area-bracket theorem",
+      "Recognition-Kernel-Framework theorum/thermodynamics/10 T3.1/T4.1"
+    ],
+    "stencil": {
+      "dT_K": 5.0,
+      "ds": 0.05
+    }
+  },
+  "_pin": "1b87e265d0423f15128db9a14ec039054490ca7c504affed221463ead7ac92a1"
+}
