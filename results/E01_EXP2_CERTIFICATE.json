@@ -1,0 +1,82 @@
+{
+  "PREDICTION_EXP2_P": {
+    "all_four_cells_strictly_increasing": false,
+    "exact_null_probability_if_pass": 3.721088629782046e-12,
+    "status": "FAILED_SEE_BREAKS"
+  },
+  "_pin": "3d29fbdb987239007deefa06cf02c0dea694b2ab32c7c87fc0d3b720587d6476",
+  "data_pins": {
+    "raw/B0005.mat": "0eae4585baf3f200c09fe24c5ab884f1889679fc75206ca1aa19da704104f0b0",
+    "raw/B0006.mat": "fa818ab4db5db8ab21e910b6dd6c3e20d3761bb9672089e1a4de8f96074616c5",
+    "raw/B0007.mat": "d022afa086efaf54ab5b63f05220f5be178c8027e2fa8d68589db0e85a441a3b",
+    "raw/B0018.mat": "d1e6c923a43ea1c9666b3a90bbb521757a067fd60b4d17dbfaa49c50b179da69"
+  },
+  "null": "stage exchangeability; P(strictly increasing) = 1/720 per cell; joint (1/720)^4 = 3.72e-12",
+  "per_cell": {
+    "B0005": {
+      "breaks": [
+        {
+          "from": 0.05545537147118804,
+          "to": 0.046350949361479904,
+          "transition": "3->4"
+        },
+        {
+          "from": 0.046350949361479904,
+          "to": 0.04440350749350877,
+          "transition": "4->5"
+        }
+      ],
+      "growth_factor_stage1_to_eol": 10.586586980419623,
+      "strictly_increasing": false,
+      "transverse_by_stage": [
+        4.667885496583779e-09,
+        0.004194317543098176,
+        0.025828639558866547,
+        0.05545537147118804,
+        0.046350949361479904,
+        0.04440350749350877
+      ]
+    },
+    "B0006": {
+      "breaks": [],
+      "growth_factor_stage1_to_eol": 21.935898847663214,
+      "strictly_increasing": true,
+      "transverse_by_stage": [
+        6.416809262948587e-09,
+        0.004648627097655624,
+        0.034664323666919315,
+        0.058026134145436156,
+        0.07369674370083071,
+        0.10197181379468
+      ]
+    },
+    "B0007": {
+      "breaks": [],
+      "growth_factor_stage1_to_eol": 8.708743178453606,
+      "strictly_increasing": true,
+      "transverse_by_stage": [
+        6.292350559812323e-09,
+        0.01491196991809699,
+        0.02724903829462139,
+        0.06696113774356525,
+        0.10707712871041802,
+        0.12986451630153253
+      ]
+    },
+    "B0018": {
+      "breaks": [],
+      "growth_factor_stage1_to_eol": 930.7370877953011,
+      "strictly_increasing": true,
+      "transverse_by_stage": [
+        1.105637382128424e-08,
+        2.784882987254044e-05,
+        0.002077275058895369,
+        0.010264433159010255,
+        0.0137513704896155,
+        0.025919938814075075
+      ]
+    }
+  },
+  "pipeline": "identical to E01-EXP-R; deviations D1-D3 carried over",
+  "statistic": "per-cell strict monotonicity of cut-square transverse share across six life stages (Kendall tau = 1)"
+}

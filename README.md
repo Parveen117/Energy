@@ -132,6 +132,32 @@ Preregistered predictions, exactly as they fell:
 
 Certificate: `results/E01_EXP_REDUCED_CERTIFICATE.json` (pinned).
 
+## E01-EXP-2 — preregistered exact statistic (results as they fell)
+
+Statistic committed before computation (`E01_EXP2_PREREGISTRATION.md`):
+all four cells must show strictly increasing transverse share across
+all six life stages (Kendall tau = 1; exact joint null probability
+(1/720)^4).
+
+**EXP2-P FAILED.** B0005 breaks monotonicity at transitions 3->4 and
+4->5 (0.0555 -> 0.0464 -> 0.0444); B0006, B0007, B0018 are strictly
+monotonic with growth factors x22, x9, x931. Interpretation (labeled
+as such, not an excuse): B0005's late-life dip is consistent with the
+well-documented rest-induced capacity-regeneration events in the NASA
+cells — real electrochemistry that a strict-monotonicity statistic is
+brittle to. Certificate: `results/E01_EXP2_CERTIFICATE.json`.
+
+**Stopping rule, stated now:** two preregistered statistics have been
+tried on this dataset and both failed for identifiable reasons
+(between-cell heterogeneity; within-cell regeneration). Further
+statistic iterations on THIS dataset stop here — a third attempt would
+be threshold-shopping. The next preregistration targets NEW data (a
+second temperature group or CALCE cells) with a statistic designed for
+both known failure modes, committed before that data is touched. The
+plainly visible underlying signal — transverse share growing an order
+of magnitude or more over life in every cell — remains descriptive,
+not certified, until it passes a preregistered test on fresh data.
+
 ## Queued domains (not started, no claims)
 
 Grid state certification (PMU voltage/frequency/phase charts),
