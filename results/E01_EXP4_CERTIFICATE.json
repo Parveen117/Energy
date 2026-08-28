@@ -1,0 +1,37 @@
+{
+  "EXP4A_A123_SINGLE_CHART": {
+    "noise_standard_error": 1.0625957261202388e-09,
+    "raw_residual": 1.653090211499502e-10,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 0.15557094489126955
+  },
+  "EXP4B_CHEMISTRY_MIX": {
+    "noise_standard_error": 1.826287411254325e-09,
+    "raw_residual": 1.490004454947693e-09,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 0.8158652607282294
+  },
+  "_meta": {
+    "a123_temperatures_C": [
+      -10,
+      0,
+      10,
+      25,
+      30,
+      40,
+      50
+    ],
+    "chart_point": {
+      "T_C": 25,
+      "s": 0.5
+    },
+    "framework_sources": [
+      "arXiv:2603.20773 rank-2 area-bracket theorem"
+    ],
+    "noise_term": "cross-slot spread of gradient estimates (two cells, decimated windows)",
+    "preregistration": "E01_EXP4_PREREGISTRATION.md"
+  },
+  "_pin": "1159be615e5cf2dff2ec54e35b85b5d6e9b42acbe2ac18b0d1cb31c7ceb1f9a4"
+}

@@ -201,6 +201,32 @@ month, scrambling chronology). The two defect runs of EXP-3 produced
 impossible capacity ratios and were discarded as parsing defects; the
 preregistered statistic itself was never altered.
 
+## E01-EXP-4 — first true (s, T) chart audit on real rest-OCV (results as they fell)
+
+Preregistered before the A123/INR archives were opened
+(`E01_EXP4_PREREGISTRATION.md`). Channels from genuine low-current
+OCV branches (deviation D1 removed): OCV, its first and second SoC
+derivatives, and the charge/discharge hysteresis half-width; cubic
+local fits; noise term = cross-slot spread over two replicate cells
+and decimated windows.
+
+- **EXP4-A PASS**: A123 single-chemistry chart across seven ambient
+  temperatures (-10 to 50 C), six disjoint slots ->
+  `NOT_FALSIFIED` (z = +0.2). The first genuine full (s, T)
+  Pluecker consistency certificate on real rest-OCV data.
+- **EXP4-B prediction FAILED**: A123/INR chemistry mix on one claimed
+  chart was predicted to falsify at |z| >= 5; it landed at z = +0.8,
+  `NOT_FALSIFIED`. Published as it fell under the no-retry rule.
+  Interpretation (labeled as such): the noise term inherited the
+  A123 cross-slot spread, and the INR gradients come from sparse
+  rest points smoothed over wide windows — at this measurement
+  contract the mix deviation sits inside the noise. The teeth of the
+  audit at fresh-cell contrast therefore remain demonstrated only
+  synthetically (E01C/D) and via the aging trend (EXP-3), not yet by
+  a real-data chemistry-mix rejection.
+
+Certificate: `results/E01_EXP4_CERTIFICATE.json` (pinned).
+
 ## Queued domains (not started, no claims)
 
 Grid state certification (PMU voltage/frequency/phase charts),
