@@ -91,6 +91,47 @@ Data contract declared before any data is fitted:
    fixed in advance; bootstrap audit for any rejection.
 4. Outcomes reported whichever way they fall.
 
+## E01-EXP-R — executed on real NASA PCoE cells (results as they fell)
+
+Data: the four 24 C cells (B0005/6/7/18) from a community GitHub mirror
+of the NASA PCoE set, hashes pinned in `data/MANIFEST.sha256`
+(deviation D3: authenticity rests on the mirror). The full (s, T)
+Pluecker rung was **NOT_EXECUTABLE** — only one ambient-temperature
+group is publicly mirrored on an allowed source — and the certificate
+says so. The preregistered reduced path (cut-square decomposition of
+life-stage response events against the fresh-cell decoder) was
+executed with deviations D1–D3 recorded.
+
+Transverse share of real response energy that the fresh-cell decoder
+cannot capture, by life stage (capacity ratio in brackets):
+
+| Stage | Capacity | Transverse share |
+| --- | --- | --- |
+| fresh | 1.000 | ~0 |
+| 1 | 0.946 | 4.6e-3 |
+| 2 | 0.853 | 2.0e-2 |
+| 3 | 0.777 | 4.6e-2 |
+| 4 | 0.740 | 5.9e-2 |
+| 5 (EOL) | 0.694 | 7.6e-2 |
+
+Monotonic growth across all six stages — the aging signal is real.
+Preregistered predictions, exactly as they fell:
+
+- **P1 pass**: fresh events carry ~zero transverse share.
+- **P2 FAIL** (z = 1.6, needed 5): with only four cells that age at
+  visibly different rates, the between-cell spread is too wide for the
+  preregistered spread-normalized statistic, even thougheach cell's
+  own transverse share rises ~15x over life. The gap is quantified in
+  the certificate; a per-cell paired statistic is the natural
+  preregistration for E01-EXP-2, and it will be committed BEFORE any
+  new data, not retrofitted to this run.
+- **P3 pass** (channel-1 pair share 0.0015 << 0.9): on real cells the
+  aging signature sits decisively in the capacity/resistance pairs,
+  not the voltage pairs — the cell-vs-sensor discriminant behaves on
+  real data exactly as the synthetic rung predicted.
+
+Certificate: `results/E01_EXP_REDUCED_CERTIFICATE.json` (pinned).
+
 ## Queued domains (not started, no claims)
 
 Grid state certification (PMU voltage/frequency/phase charts),

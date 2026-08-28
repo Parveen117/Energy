@@ -1,0 +1,84 @@
+{
+  "FULL_ST_CHART_RUNG": {
+    "reason": "only the 24 C ambient group is publicly mirrored on an allowed source; the (s, T) chart temperature axis cannot be constructed. Reported per preregistration section 1.",
+    "status": "NOT_EXECUTABLE"
+  },
+  "REDUCED_CUT_SQUARE_RUNG": {
+    "cells": [
+      "B0005",
+      "B0006",
+      "B0007",
+      "B0018"
+    ],
+    "identity_max_rel_residual": 2.698287637506154e-16,
+    "per_stage": [
+      {
+        "capacity_ratio": 1.0,
+        "cell_spread": 2.7499601671757022e-09,
+        "channel1_pair_share": 0.9990243921029114,
+        "stage": 0,
+        "transverse_share": 1.291769456267484e-34
+      },
+      {
+        "capacity_ratio": 0.9458371510891467,
+        "cell_spread": 0.006328893988156076,
+        "channel1_pair_share": 0.001579184116137653,
+        "stage": 1,
+        "transverse_share": 0.004580058969913792
+      },
+      {
+        "capacity_ratio": 0.8526988032761534,
+        "cell_spread": 0.014126612062481284,
+        "channel1_pair_share": 0.0015146561971699514,
+        "stage": 2,
+        "transverse_share": 0.02015166034370968
+      },
+      {
+        "capacity_ratio": 0.7765732184968299,
+        "cell_spread": 0.025424304423360626,
+        "channel1_pair_share": 0.0015244016884664966,
+        "stage": 3,
+        "transverse_share": 0.0463630945764304
+      },
+      {
+        "capacity_ratio": 0.7400978242866476,
+        "cell_spread": 0.039702633087848875,
+        "channel1_pair_share": 0.0015189056555391903,
+        "stage": 4,
+        "transverse_share": 0.05889883527552643
+      },
+      {
+        "capacity_ratio": 0.6941822560868037,
+        "cell_spread": 0.04858472149953224,
+        "channel1_pair_share": 0.0015131080894527865,
+        "stage": 5,
+        "transverse_share": 0.07572021089660715
+      }
+    ],
+    "prediction_P3_eol_channel1_share_below_0p9": {
+      "passes": true,
+      "value": 0.0015131080894527865
+    },
+    "prediction_reduced_P1_fresh_transverse_small": {
+      "passes": true,
+      "value": 1.291769456267484e-34
+    },
+    "prediction_reduced_P2_eol_exceeds_fresh_5x_spread": {
+      "passes": false,
+      "z": 1.5585189862071385
+    },
+    "stages": 6
+  },
+  "_pin": "1aacf8976f5c149ceeb7f9e2a2ed3a1affe3ceef7e1a7505abfbc62889a1397e",
+  "data_pins": {
+    "raw/B0005.mat": "0eae4585baf3f200c09fe24c5ab884f1889679fc75206ca1aa19da704104f0b0",
+    "raw/B0006.mat": "fa818ab4db5db8ab21e910b6dd6c3e20d3761bb9672089e1a4de8f96074616c5",
+    "raw/B0007.mat": "d022afa086efaf54ab5b63f05220f5be178c8027e2fa8d68589db0e85a441a3b",
+    "raw/B0018.mat": "d1e6c923a43ea1c9666b3a90bbb521757a067fd60b4d17dbfaa49c50b179da69"
+  },
+  "protocol_deviations": [
+    "D1: pseudo-OCV under constant-current load at 50% delivered capacity, identical at every stage (rest OCV not in dataset).",
+    "D2: channels are SoC-axis and impedance quantities only; no thermal channel in a single-temperature group.",
+    "D3: data is a community GitHub mirror of the NASA PCoE set; authenticity rests on the mirror. Hashes pinned in data/MANIFEST.sha256."
+  ]
+}
