@@ -14,3 +14,7 @@ jobs:
         run: |
           python campaigns/E01_CELL_CHART_AUDIT/run_e01.py
           git diff --exit-code results/E01_CERTIFICATE.json
+      - name: verify all pinned certificates and canonical root
+        run: |
+          python scripts/verify_certificates.py
+          git diff --exit-code results/CANONICAL_ROOT.txt
