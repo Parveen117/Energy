@@ -1,0 +1,97 @@
+{
+  "PREDICTION_EXP3_P": {
+    "passes": true,
+    "status": "CERTIFIED_AGING_TREND"
+  },
+  "_pin": "d9605dfba33a75e8426a9d306795ed753cebdb42a3c30e2071518429b960073d",
+  "combined_p": 3.130892804417386e-11,
+  "deviations": [
+    "DC internal-resistance column substituted for EIS (allowed by preregistration).",
+    "D1 pseudo-OCV under load carried over.",
+    "DD-4: cumulative Discharge_Capacity column; per-cycle capacity taken as within-cycle range (first run produced impossible capacity ratios ~54 and was discarded as a parsing defect before any verdict was accepted).",
+    "DD-5: filename date regex captured the cell number as month, scrambling chronology; fixed to the last three number groups. Both defect runs discarded before accepting a verdict."
+  ],
+  "fisher_X": 75.3674956056651,
+  "per_cell": {
+    "CS2_33": {
+      "capacity_ratio_eol": 0.26043154909665095,
+      "exact_p": 0.001388888888888889,
+      "kendall_tau": 1.0,
+      "transverse_by_stage": [
+        1.7782474393082655e-08,
+        5.9077488165811814e-05,
+        0.0011646352671863553,
+        0.009177065718313606,
+        0.012943156131505902,
+        0.27997754211408366
+      ]
+    },
+    "CS2_34": {
+      "capacity_ratio_eol": 0.4474576601203106,
+      "exact_p": 0.008333333333333333,
+      "kendall_tau": 0.8666666666666667,
+      "transverse_by_stage": [
+        1.3486913168977216e-08,
+        0.0045896013841550355,
+        0.018022848984259016,
+        0.01597638484364072,
+        0.06443972160011743,
+        0.1752364374507314
+      ]
+    },
+    "CS2_35": {
+      "capacity_ratio_eol": 0.26486946706738157,
+      "exact_p": 0.001388888888888889,
+      "kendall_tau": 1.0,
+      "transverse_by_stage": [
+        3.7056634404788216e-09,
+        0.0013893312364746094,
+        0.006630036147844538,
+        0.016653811077023368,
+        0.0831813306705022,
+        0.2937298854871311
+      ]
+    },
+    "CS2_36": {
+      "capacity_ratio_eol": 0.26742027068052254,
+      "exact_p": 0.001388888888888889,
+      "kendall_tau": 1.0,
+      "transverse_by_stage": [
+        1.415829704003007e-09,
+        8.423588704027017e-05,
+        0.0023354852719411306,
+        0.017845924105044916,
+        0.06933239759600258,
+        0.2780082307131411
+      ]
+    },
+    "CS2_37": {
+      "capacity_ratio_eol": 0.2741490091429083,
+      "exact_p": 0.001388888888888889,
+      "kendall_tau": 1.0,
+      "transverse_by_stage": [
+        5.954478023802164e-09,
+        0.0010435958250949666,
+        0.002644100194602389,
+        0.009559968869559923,
+        0.05201648442926297,
+        0.27340015006552576
+      ]
+    },
+    "CS2_38": {
+      "capacity_ratio_eol": 0.2644924275999667,
+      "exact_p": 0.001388888888888889,
+      "kendall_tau": 1.0,
+      "transverse_by_stage": [
+        5.149423861534943e-09,
+        0.00018967940396460997,
+        0.002167714434708895,
+        0.007499114334563873,
+        0.055705625466066534,
+        0.2719523272636416
+      ]
+    }
+  },
+  "statistic": "per-cell Kendall tau of transverse share vs stage; exact permutation p (720 arrangements); Fisher combination, chi-square 12 dof",
+  "threshold": 1e-06
+}

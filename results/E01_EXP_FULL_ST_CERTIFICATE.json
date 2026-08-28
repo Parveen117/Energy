@@ -1,0 +1,50 @@
+{
+  "FULL_ST_RUNG_AGING_SLOTS": {
+    "noise_standard_error": 1.5832309553924262e-05,
+    "raw_residual": -1.1326544985334913e-05,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": -0.715406993954806
+  },
+  "FULL_ST_RUNG_FRESH_CONTROL": {
+    "noise_standard_error": 1.917673229332027e-05,
+    "raw_residual": -1.0587911840678754e-22,
+    "status": "NOT_FALSIFIED",
+    "z_score": -5.5212283713043155e-18
+  },
+  "_deviations": [
+    "D4 curve-based channels (degeneracy reason)",
+    "D5 stage-fraction matching",
+    "D6 cross-group T stencil; cell spread as noise"
+  ],
+  "_meta": {
+    "chart_point": {
+      "T_K": 297.15,
+      "s": 0.5
+    },
+    "framework_sources": [
+      "arXiv:2603.20773 rank-2 area-bracket theorem"
+    ],
+    "groups_K": {
+      "277.15": [
+        "B0045",
+        "B0046",
+        "B0047",
+        "B0048"
+      ],
+      "297.15": [
+        "B0005",
+        "B0006",
+        "B0007"
+      ],
+      "316.15": [
+        "B0029",
+        "B0030",
+        "B0031",
+        "B0032"
+      ]
+    },
+    "re_ref_ohm_fresh24C": 0.04802347555854173
+  },
+  "_pin": "f9def95e7e1cebc7a0f973e27b0bc668a1ca901c6f67ad78c2f4dfbb40dd7ba4"
+}

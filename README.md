@@ -158,6 +158,49 @@ plainly visible underlying signal — transverse share growing an order
 of magnitude or more over life in every cell — remains descriptive,
 not certified, until it passes a preregistered test on fresh data.
 
+## E01-EXP-3 — PASSED on CALCE CS2 (preregistered, data-blind)
+
+All 26 raw archives (full NASA set with three ambient-temperature
+groups, six CALCE CS2 cells, A123 8-temperature OCV, INR incremental
+OCV) are pinned in `data/MANIFEST.sha256`; the archives themselves are
+release assets under tag `raw-data-v1`.
+
+**Full (s, T) rung on real NASA multi-temperature groups** (4 C / 24 C
+/ 43 C, deviations D4-D6): fresh control `NOT_FALSIFIED` (z = 0.0);
+aging slots `NOT_FALSIFIED` (z = -0.7) — the original P2 prediction
+fails on the full rung too, for the now thrice-confirmed reason:
+cross-cell spread dominates the noise contract in public data, where
+the temperature axis must be built from different physical cells.
+Same-cell (s, T) characterization — exactly what a funded lab pilot
+would collect — is the stated path to a 5-sigma chart falsification.
+Certificate: `results/E01_EXP_FULL_ST_CERTIFICATE.json`.
+
+**EXP3-P (Kendall tau per cell + Fisher), committed data-blind before
+download, PASSED:**
+
+| Cell | tau | exact p | capacity at EOL | transverse share, fresh -> EOL |
+| --- | --- | --- | --- | --- |
+| CS2_33 | +1.00 | 1/720 | 0.26 | ~0 -> 0.28 |
+| CS2_34 | +0.87 | 6/720 | 0.45 | ~0 -> 0.18 (one inversion — the regeneration tolerance doing its job) |
+| CS2_35 | +1.00 | 1/720 | 0.26 | ~0 -> 0.29 |
+| CS2_36 | +1.00 | 1/720 | 0.27 | ~0 -> 0.28 |
+| CS2_37 | +1.00 | 1/720 | 0.27 | ~0 -> 0.27 |
+| CS2_38 | +1.00 | 1/720 | 0.26 | ~0 -> 0.27 |
+
+Fisher X = 75.4, combined p = 3.1e-11 < 1e-6 ->
+**CERTIFIED_AGING_TREND** on six real CALCE cells, under the
+single-statistic stopping rule. Certificate:
+`results/E01_EXP3_CERTIFICATE.json`.
+
+Pipeline defects found and recorded before any verdict was accepted:
+DD-3 (quadratic fit left two zero s-gradient rows, making the full-rung
+Pfaffian vacuous — fixed by the cubic fit), DD-4 (cumulative Arbin
+Discharge_Capacity column — per-cycle capacity is the within-cycle
+range), DD-5 (filename date regex captured the cell number as the
+month, scrambling chronology). The two defect runs of EXP-3 produced
+impossible capacity ratios and were discarded as parsing defects; the
+preregistered statistic itself was never altered.
+
 ## Queued domains (not started, no claims)
 
 Grid state certification (PMU voltage/frequency/phase charts),
