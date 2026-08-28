@@ -1,0 +1,29 @@
+{
+  "EXP5A_A123_WHITENED": {
+    "noise_standard_error": 12111.19075733554,
+    "normalized_residual_T01": 0.018245297209510333,
+    "raw_residual": 1453.9887430936205,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 0.120053326896281
+  },
+  "EXP5B_CHEMISTRY_MIX_WHITENED": {
+    "noise_standard_error": 21703.75906597295,
+    "normalized_residual_T01": 0.17302831173807262,
+    "raw_residual": 13105.453589792924,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 0.6038333520915089
+  },
+  "_meta": {
+    "audit_basis": "AUDIT_CROSS_REPO.md AF-1/AF-2",
+    "preregistration": "E01_EXP5_PREREGISTRATION.md"
+  },
+  "_pin": "5bab5ff7f003254632602b58d9380fe1abda75492b3cbb562691d0a610d09d30",
+  "_whitening_scales": [
+    0.0001069126946383311,
+    0.00020345800837802847,
+    0.04441955175829576,
+    0.00011766770248698957
+  ]
+}

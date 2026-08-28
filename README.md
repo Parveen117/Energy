@@ -227,6 +227,32 @@ and decimated windows.
 
 Certificate: `results/E01_EXP4_CERTIFICATE.json` (pinned).
 
+## Cross-repo audit and E01-EXP-5 (whitened)
+
+A requested self-audit against the sibling repositories
+(`AUDIT_CROSS_REPO.md`) found: conventions match T01/B01 exactly;
+AF-1, the EXP-4 noise term deviated from its preregistration
+(numerically benign); **AF-2, the EXP-4 channels were not whitened**,
+violating the Section-2 contract of the cut-square theorem that B02
+obeyed — one dominant channel made all slot two-forms nearly
+collinear, so EXP4-A's pass was LOW-POWER and EXP4-B's non-rejection
+was partly mechanical; AF-3, the EXP-3 metric floor carried weight on
+two channels — checked by a five-metric robustness sweep, **EXP3-P's
+CERTIFIED_AGING_TREND holds under every alternative metric**
+(p between 3.1e-11 and 6.5e-12).
+
+EXP-5 (preregistered whitened rerun, single shot) verified the AF-2
+remedy: the T01 normalized residual of the chemistry mix rose 100x
+(1.8e-3 -> 0.173) and now separates from the single-chemistry chart
+(0.018) by an order of magnitude — the mechanical collapse is gone.
+The 5-sigma prediction still FAILED (z = +0.6): with only two
+replicate cells the declared noise term cannot resolve even an
+order-of-magnitude normalized deviation at threshold. Published as it
+fell. This closes the loop on the programme's central empirical
+finding: every remaining falsification gap traces to the replicate
+structure of public data, which is precisely the measurement contract
+a funded pilot buys. Certificate: `results/E01_EXP5_CERTIFICATE.json`.
+
 ## Queued domains (not started, no claims)
 
 Grid state certification (PMU voltage/frequency/phase charts),
